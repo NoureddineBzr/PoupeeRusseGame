@@ -16,7 +16,7 @@ class PoupeeRusse extends Poupee {
             System.out.println("La poupée dans laquelle vous voulez placer une autre poupée est fermée.");
             return;
         }
-        if (p.getTaille() < this.getTaille()) {
+        if (p.getTaille() > this.getTaille()) {
             System.out.println("Impossible de placer une poupée plus grande à l'intérieur.");
             return;
         }
@@ -24,7 +24,7 @@ class PoupeeRusse extends Poupee {
             System.out.println("Il y a déjà une poupée à l'intérieur.");
             return;
         }
-        contenue =(PoupeeRusse) p;
+        contenue = (PoupeeRusse)p;
         System.out.println("La poupée de taille " + p.getTaille() + " est placée dans la poupée de taille " + this.getTaille() + ".");
     }
 

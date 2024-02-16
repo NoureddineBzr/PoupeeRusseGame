@@ -59,7 +59,7 @@ public class Main {
                     } else {
                         System.out.println("Aucune poupée de cette taille.");
                     }
-
+ 
                     break;
                 case 4:
                     System.out.print("Donner la taille de la poupée à retirer: ");
